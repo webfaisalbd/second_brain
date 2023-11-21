@@ -454,7 +454,6 @@ p {
 
 .smarter-work-section-container {
     background: #01051F;
-    border: 1px solid violet;
     width: 100%;
     padding: 8% 0;
     display: flex;
@@ -483,23 +482,80 @@ p {
     .content-text {
         width: 45%;
         padding-right: 10%;
+
         .heading {
             color: #fff;
             font-size: 45px;
             line-height: 50px;
             font-family: 'Baloo 2', sans-serif;
         }
+
+        .description {
+            margin: 20px 0;
+            color: #fff;
+            font-size: 16px;
+            line-height: 30px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .responsive-content-image {
+            display: none;
+        }
     }
 
-    .description {
-        margin: 20px 0;
-        color: #fff;
-        font-size: 16px;
-        line-height: 30px;
-        font-family: 'Montserrat', sans-serif;
+    .card-box {
+        margin-top: 45px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 20px;
+
+        .single-item {
+            max-width: 358px;
+            width: 100%;
+            margin: auto;
+            height: 216px;
+            z-index: 1;
+
+            border: 1px solid #800080;
+            background: #030720;
+            border-image: linear-gradient(to right, #800080, #E62274, #F9CE00) 30;
+            border-radius: 7px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
 }
+
+@media (max-width:768px) {
+    .smarter-work-section {
+        .card-box {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .smarter-work-section-container {
+        .content-image {
+            display: none;
+        }
+
+        .smarter-work-section {
+            .content-text {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* smarter work END */
 
 @media (max-width: 1090px) {
     .what-can-section {
@@ -524,7 +580,6 @@ p {
 
 @media (max-width: 868px) {
     .about-us-section {
-        border: 2px solid red;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
