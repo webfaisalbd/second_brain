@@ -405,9 +405,11 @@ p {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 29px;
+        justify-items: center;
 
         .single-item {
             max-width: 261px;
+            width: 100%;
             height: 66px;
             border-radius: 7px;
             border: 1px solid #353B5F;
@@ -497,10 +499,6 @@ p {
             line-height: 30px;
             font-family: 'Montserrat', sans-serif;
         }
-
-        .responsive-content-image {
-            display: none;
-        }
     }
 
     .card-box {
@@ -556,6 +554,29 @@ p {
 }
 
 /* smarter work END */
+
+
+
+
+
+
+.footer-section-container {
+    background: #11152E;
+    padding: 23px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+}
+
+/* footer  END */
+
+
 
 @media (max-width: 1090px) {
     .what-can-section {
