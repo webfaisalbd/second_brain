@@ -454,6 +454,140 @@ p {
 
 
 
+
+
+
+.got-question-section-container {
+    position: relative;
+    width: 100%;
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+
+    .got-question-bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+
+        .img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .got-question-left {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+
+        .img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .got-question-bottom-right {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+
+        .img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.got-question-section {
+    width: 100%;
+
+    .heading {
+        text-align: center;
+        color: #fff;
+        font-size: 45px;
+        line-height: 50px;
+        font-family: 'Baloo 2', sans-serif;
+    }
+
+    .description {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .item-box-container {
+        border: 1px solid red;
+        margin-top: 30px;
+        display: grid;
+        padding: 0 30px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        .robot {
+            border: 1px solid blue;
+            position: relative;
+
+            .img {
+                width: 100%;
+            }
+
+            .robot-bg {
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .faq-container {
+            border: 1px solid green;
+        }
+    }
+
+    .get-started {
+        margin: auto;
+    }
+}
+
+@media (max-width: 890px) {
+    .got-question-section-container {
+        .got-question-section {
+
+            .item-box-container {
+                border: 2px solid red;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                justify-items: center;
+
+                .robot {
+                    width: 100%;
+
+                    .img {
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+/* got question END */
+
+
+
+
+
 .smarter-work-section-container {
     background: #01051F;
     width: 100%;
@@ -465,7 +599,7 @@ p {
 
 .content-image {
     position: absolute;
-    top: 0%;
+    top: 5%;
     right: 0%;
     max-width: 60%;
     width: 100%;
