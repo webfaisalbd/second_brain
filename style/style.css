@@ -551,12 +551,196 @@ p {
 
         .faq-container {
             border: 1px solid green;
+
+
+            /* .accordion {
+                margin-top: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                max-width: 550px;
+                width: 100%;
+            }
+
+            .accordion-item {
+                margin-bottom: 20px;
+                position: relative;
+            }
+
+            .accordion-title {
+                color: #fff;
+                background-color: #11152E;
+                border-radius: 7px;
+                border: 2px solid #22284F;
+                padding: 17px 30px !important;
+                cursor: pointer;
+                padding: 10px;
+                transition: background-color 1s;
+
+                font-family: 'Baloo 2', sans-serif;
+                font-size: 20px;
+                line-height: normal;
+                text-transform: capitalize;
+
+
+            }
+
+
+            .accordion-title::before {
+                content: '+';
+                position: absolute;
+                top: 18%;
+                right: 20px;
+                font-size: 28px;
+            }
+
+            .accordion-content {
+                color: #FFF;
+
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px;
+
+                display: none;
+                padding: 10px;
+                background: #000;
+            }
+
+            .accordion-item.active .accordion-content {
+                display: block;
+            }
+
+            .accordion-item.active .accordion-title::before {
+                content: '\00d7';
+                position: absolute;
+                top: 5%;
+                right: 20px;
+                font-size: 28px;
+            }
+
+            .accordion-item.active .accordion-title {
+                border: 0;
+                border-radius: 0;
+                border-top: 2px solid transparent;
+                border-left: 2px solid transparent;
+                border-right: 2px solid transparent;
+                background: linear-gradient(#22284F, #22284F) padding-box,
+                    linear-gradient(to right, #800080, #E62274, #F9CE00) border-box;
+                border-top-left-radius: 7px;
+                border-top-right-radius: 7px;
+            }
+
+
+            .accordion-item.active .accordion-content {
+                border: 0;
+                border-radius: 0;
+                border-bottom: 2px solid transparent;
+                border-left: 2px solid transparent;
+                border-right: 2px solid transparent;
+                background: linear-gradient(#22284F, #22284F) padding-box,
+                    linear-gradient(to right, #800080, #E62274, #F9CE00) border-box;
+                border-bottom-left-radius: 7px;
+                border-bottom-right-radius: 7px;
+                border-top: 2px solid #212121;
+            } */
         }
     }
 
     .get-started {
         margin: auto;
     }
+}
+
+
+.accordion {
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 550px;
+    width: 100%;
+}
+
+.accordion-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.accordion-title {
+    color: #fff;
+    background-color: #11152E;
+    border-radius: 7px;
+    border: 2px solid #22284F;
+    padding: 17px 30px !important;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 1s;
+
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 20px;
+    line-height: normal;
+    text-transform: capitalize;
+
+
+}
+
+
+.accordion-title::before {
+    content: '+';
+    position: absolute;
+    top: 18%;
+    right: 20px;
+    font-size: 28px;
+}
+
+.accordion-content {
+    color: #FFF;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+
+    display: none;
+    padding: 10px;
+    background: #000;
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+.accordion-item.active .accordion-title::before {
+    content: '\00d7';
+    position: absolute;
+    top: 5%;
+    right: 20px;
+    font-size: 28px;
+}
+
+.accordion-item.active .accordion-title {
+    border: 0;
+    border-radius: 0;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    background: linear-gradient(#22284F, #22284F) padding-box,
+        linear-gradient(to right, #800080, #E62274, #F9CE00) border-box;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+
+.accordion-item.active .accordion-content {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    background: linear-gradient(#22284F, #22284F) padding-box,
+        linear-gradient(to right, #800080, #E62274, #F9CE00) border-box;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top: 2px solid #212121;
 }
 
 @media (max-width: 890px) {
