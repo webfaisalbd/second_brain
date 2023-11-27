@@ -745,9 +745,9 @@ p {
             height: 216px;
             z-index: 1;
 
-            border: 1px solid #800080;
-            background: #030720;
-            border-image: linear-gradient(to right, #800080, #E62274, #F9CE00) 30;
+            border: 2px solid transparent;
+            background: linear-gradient(#030720, #030720) padding-box,
+                linear-gradient(to right, #800080, #E62274, #F9CE00) border-box;
             border-radius: 7px;
 
             display: flex;
