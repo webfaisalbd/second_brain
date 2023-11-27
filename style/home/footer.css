@@ -1,0 +1,13 @@
+.footer-section-container {
+    background: #11152E;
+    padding: 23px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+}

@@ -9,7 +9,6 @@ accordionItems.forEach(item => {
       if(accordionItems[i] != item){
         accordionItems[i].classList.remove('active');
       }else{
-        // toggle the accordion item
         item.classList.toggle('active');
       }
     }
