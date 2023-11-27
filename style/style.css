@@ -288,6 +288,7 @@ p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+    justify-content: center;
 
     .content {
 
@@ -304,6 +305,7 @@ p {
             line-height: 30px;
             font-family: 'Montserrat', sans-serif;
             margin-bottom: 30px;
+            width: 100%;
         }
     }
 
@@ -463,7 +465,7 @@ p {
     padding-top: 5%;
     display: flex;
     align-items: center;
-    z-index: -1;
+    /* z-index: -1; */
 
     .got-question-bg {
         position: absolute;
@@ -525,7 +527,6 @@ p {
     }
 
     .item-box-container {
-        border: 1px solid red;
         margin-top: 30px;
         display: grid;
         padding: 0 30px;
@@ -533,7 +534,6 @@ p {
         gap: 20px;
 
         .robot {
-            border: 1px solid blue;
             position: relative;
 
             .img {
@@ -550,14 +550,14 @@ p {
         }
 
         .faq-container {
-            border: 1px solid green;
+            width: 100%;
 
-
-            /* .accordion {
+            .accordion {
                 margin-top: 30px;
                 font-family: Arial, Helvetica, sans-serif;
                 max-width: 550px;
                 width: 100%;
+                margin: auto;
             }
 
             .accordion-item {
@@ -587,9 +587,13 @@ p {
             .accordion-title::before {
                 content: '+';
                 position: absolute;
-                top: 18%;
+                top: 25%;
                 right: 20px;
-                font-size: 28px;
+                font-size: 30px;
+                font-weight: 400;
+                font-family: sans-serif;
+                height: 17px;
+                width: 17px;
             }
 
             .accordion-content {
@@ -602,7 +606,7 @@ p {
                 line-height: 30px;
 
                 display: none;
-                padding: 10px;
+                padding: 10px 30px;
                 background: #000;
             }
 
@@ -624,7 +628,7 @@ p {
                 border-top: 2px solid transparent;
                 border-left: 2px solid transparent;
                 border-right: 2px solid transparent;
-                background: linear-gradient(#22284F, #22284F) padding-box,
+                background: linear-gradient(#000, #000) padding-box,
                     linear-gradient(to right, #800080, #E62274, #F9CE00) border-box;
                 border-top-left-radius: 7px;
                 border-top-right-radius: 7px;
@@ -637,12 +641,12 @@ p {
                 border-bottom: 2px solid transparent;
                 border-left: 2px solid transparent;
                 border-right: 2px solid transparent;
-                background: linear-gradient(#22284F, #22284F) padding-box,
+                background: linear-gradient(#000, #000) padding-box,
                     linear-gradient(to right, #800080, #E62274, #F9CE00) border-box;
                 border-bottom-left-radius: 7px;
                 border-bottom-right-radius: 7px;
-                border-top: 2px solid #212121;
-            } */
+                border-top: 1px solid #212121;
+            }
         }
     }
 
@@ -652,103 +656,11 @@ p {
 }
 
 
-.accordion {
-    margin-top: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 550px;
-    width: 100%;
-}
-
-.accordion-item {
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.accordion-title {
-    color: #fff;
-    background-color: #11152E;
-    border-radius: 7px;
-    border: 2px solid #22284F;
-    padding: 17px 30px !important;
-    cursor: pointer;
-    padding: 10px;
-    transition: background-color 1s;
-
-    font-family: 'Baloo 2', sans-serif;
-    font-size: 20px;
-    line-height: normal;
-    text-transform: capitalize;
-
-
-}
-
-
-.accordion-title::before {
-    content: '+';
-    position: absolute;
-    top: 18%;
-    right: 20px;
-    font-size: 28px;
-}
-
-.accordion-content {
-    color: #FFF;
-
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 30px;
-
-    display: none;
-    padding: 10px;
-    background: #000;
-}
-
-.accordion-item.active .accordion-content {
-    display: block;
-}
-
-.accordion-item.active .accordion-title::before {
-    content: '\00d7';
-    position: absolute;
-    top: 5%;
-    right: 20px;
-    font-size: 28px;
-}
-
-.accordion-item.active .accordion-title {
-    border: 0;
-    border-radius: 0;
-    border-top: 2px solid transparent;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    background: linear-gradient(#22284F, #22284F) padding-box,
-        linear-gradient(to right, #800080, #E62274, #F9CE00) border-box;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-}
-
-
-.accordion-item.active .accordion-content {
-    border: 0;
-    border-radius: 0;
-    border-bottom: 2px solid transparent;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    background: linear-gradient(#22284F, #22284F) padding-box,
-        linear-gradient(to right, #800080, #E62274, #F9CE00) border-box;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    border-top: 2px solid #212121;
-}
-
 @media (max-width: 890px) {
     .got-question-section-container {
         .got-question-section {
 
             .item-box-container {
-                border: 2px solid red;
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);
                 justify-items: center;
@@ -847,15 +759,6 @@ p {
 
 }
 
-@media (max-width:768px) {
-    .smarter-work-section {
-        .card-box {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-    }
-}
 
 @media (max-width: 1000px) {
     .smarter-work-section-container {
@@ -867,6 +770,28 @@ p {
             .content-text {
                 width: 100%;
             }
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .smarter-work-section {
+        .card-box {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+    }
+}
+
+
+@media (max-width:460px) {
+    .smarter-work-section {
+        .card-box {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
         }
     }
 }
@@ -921,6 +846,10 @@ p {
     .about-us-section {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+
+        .content {
+            padding: 0 15px;
+        }
     }
 }
 
